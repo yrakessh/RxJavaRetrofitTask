@@ -22,7 +22,6 @@ import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
 
-    //final String BASE_URL = "https://api.github.com/repos/orfjackal/retrolambda/";
     final String BASE_URL = "https://api.github.com/repos/";
     RecyclerView recyclerView;
     IssuesAdapter adapter;
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 if (strSearch.equals("")){
                     Toast.makeText(this, "Please enter owner/respo", Toast.LENGTH_SHORT).show();
                 }else {
-                    //getIssues(strSearch);
                     getRxIssues(strSearch);
                 }
             }
